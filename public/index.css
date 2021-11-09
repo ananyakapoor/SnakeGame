@@ -1,0 +1,79 @@
+.game-area {
+    position: relative;
+    margin: 50px auto;
+    width: 600px;
+    height: 600px;
+    border: 2px solid #000;
+    background: linear-gradient(rgb(170, 236, 170), rgb(236, 236, 167));
+}
+
+.snake-dot {
+    position: absolute;
+    width: 2%;
+    height: 2%;
+    background-color: #000;
+    border: 1px solid #fff;
+    z-index: 2;
+    background: linear-gradient(rgb(240, 124, 124), rgb(228, 228, 129));
+    border: 2px solid rgb(34, 4, 34); 
+    transform: scale(1.02);
+    border-radius: 8px;
+}
+
+
+.snake-food {
+    position: absolute;
+    width: 2%;
+    height: 2%;
+    background: red;
+    border: 1px solid #fff;
+    z-index: 1;
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
+body{
+    background-image: url("bg.jpg");
+    min-height: 95vh;
+    background-size: 110vw 110vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    background: -webkit-linear-gradient(rgb(241, 24, 24), rgb(10, 3, 3));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3.5rem;
+    font-family: 'Goblin One', cursive;
+    display: absolute;
+}
+.titleBar{
+    display: flex;
+    height: 7rem;
+    width: 37.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -3rem;
+}
+.board{
+    display: flex;
+    height: 6rem;
+    width: 18rem;
+    position:absolute;
+    z-index: 2;
+    margin-top: 1rem;
+    margin-bottom: -1.5rem;
+    margin-left: 44rem;
+    justify-content: center;
+    align-items: center;
+}
+.score{
+    position: relative;
+    font-size: 4rem;
+    background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(130, 8, 230));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
